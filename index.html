@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ramin Plaza Hotel</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" onclick="onHomeClick()">Home page</a>
+      <a href="#" onclick="onContactUsClick()">Contact Us</a>
+    </div>
+    <div class="content" id="home">
+      <h1>Ramin Plaza Hotel</h1>
+      <p>
+        Welcome to the luxurious Paradise Resort, where dreams become reality
+        and every moment is filled with blissful indulgence. Join us on a
+        captivating journey as we unveil the exceptional wonders that await you
+        within these elegant walls.
+      </p>
+      <div class="imgTxt">
+        <div class="imgGrp">
+          <img
+            src="assets/hotel1.jfif"
+            alt="hotel"
+            height="200px"
+            width="460px"
+          />
+          <img
+            src="assets/hotelPool.jpg"
+            alt="hotel"
+            height="200px"
+            width="460px"
+          />
+        </div>
+        <div class="imgGrp">
+          <img
+            src="assets/hotelFood.jpg"
+            alt="hotel"
+            height="200px"
+            width="460px"
+          />
+          <img
+            src="assets/hotelGym.jpg"
+            alt="hotel"
+            height="200px"
+            width="460px"
+          />
+        </div>
+      </div>
+      <div class="vidTxt">
+        <p>
+          Our rooms are meticulously designed to provide the utmost comfort and
+          serenity. Each door opens to reveal an oasis of tranquility, where
+          plush bedding and tasteful furnishings create an atmosphere of pure
+          relaxation. Immerse yourself in luxury as you unwind and enjoy the
+          captivating views that surround you.
+        </p>
+        <video height="415" autoplay muted loop>
+          <source src="assets/HotelVid.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <div class="content" id="contactUs">
+      <h1>Ramin Plaza Hotel</h1>
+      <div id="contactUsSummary">
+        <p>Feel free to contact us regarding any question you have below</p>
+        <div id="previewForm">
+          <div id="preview">
+            <img src="assets/CUPicture.jpg" alt="Hotel" />
+          </div>
+          <form id="contactUsForm">
+            <div class="formInputGroup">
+              <label for="fmail">Email:</label>
+              <input class="formInput" type="text" id="fmail" name="fmail" />
+            </div>
+            <div class="formInputGroup">
+              <label for="fname">First name:</label>
+              <input class="formInput" type="text" id="fname" name="fname" />
+            </div>
+            <div class="formInputGroup">
+              <label for="lname">Last name:</label>
+              <input class="formInput" type="text" id="lname" name="lname" />
+            </div>
+            <div class="formInputGroup">
+              <label for="msgUs">Message Us:</label>
+              <input class="formInput" type="text" id="msgUs" name="msgUs" />
+            </div>
+            <input id="submitbtn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      function onHomeClick() {
+        document.getElementById("home").style.display = "flex";
+        document.getElementById("contactUs").style.display = "none";
+      }
+      function onContactUsClick() {
+        document.getElementById("contactUs").style.display = "flex";
+        document.getElementById("home").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
